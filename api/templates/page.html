@@ -23,6 +23,18 @@
             height: 100vh; 
         }
 
+        #user_id {
+            width: 100%;
+            height:32px;
+            justify-content: center;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 16px;
+            box-sizing: border-box;
+            font-size: 16px;
+            color: #333;
+        }
+
 
         #pwd {
             width: 100%;
@@ -56,6 +68,7 @@
 <body>
             <div class="container">
                 <form action="/check" method="post">
+                        <input id="user_id" type="text" name="user_id" placeholder="Enter your used id">
                         <input type="password" name="pwd" id="pwd" placeholder="Enter your password">
                         <input id="btn" type="submit" value="Submit">
                 </form>
