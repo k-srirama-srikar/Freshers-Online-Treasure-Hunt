@@ -59,6 +59,10 @@ users = ["weasley@1223414432", "dumbledore@1761837661", "lovegood@1846657233", "
 def hello_world():
     return render_template("page.html")
 
+@app.route("/f54ba756f6fd5a33ff943ed53c979235518b")
+def welcome_to_r2():
+    return render_template("answer.html")
+
 
 @app.route("/check", methods=["GET", "POST"])
 def check():
@@ -88,6 +92,9 @@ def check():
             if pwd == "aurjaoobt":
                 c2 = True
                 ans2 = "first link"
+                return welcome_to_r2()
+        else:
+            return render_template("page.html", c1=c2, ans2=ans2)
         else:
             return render_template("page.html")
     return render_template("page.html", c1=c2, ans2=ans2)
