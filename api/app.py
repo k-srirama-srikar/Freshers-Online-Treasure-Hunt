@@ -89,12 +89,12 @@ def check():
     if request.method == "POST":
         if user_id in users:
         # pwd = request.form['pwd']
-            if pwd == "aurjaoobt":
+            if pwd == "https://www.youtube.com/watch?v=jtaqHzUhYdw":
                 c2 = True
                 ans2 = "first link"
                 return welcome_to_r2()
-        else:
-            return render_template("page.html", c1=c2, ans2=ans2)
+            else:
+                return render_template("page.html", c1=c2, ans2=ans2)
         else:
             return render_template("page.html")
     return render_template("page.html", c1=c2, ans2=ans2)
