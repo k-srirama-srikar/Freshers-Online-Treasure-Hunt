@@ -20,15 +20,13 @@ def check():
 
     if request.method == "POST":
         
-        # pwd = request.form['pwd']
         if pwd == "https://www.youtube.com/watch?v=jtaqHzUhYdw":
             c2 = True
             ans2 = "first link"
             return welcome_to_r2()
         else:
-            # return render_template("page.html", c1=c2, ans2=ans2)
-            return render_template('page2.html', user_id=session.get('user_id'), c1=c2, ans2=ans2)
-    return render_template("page2.html", c1=c2, ans2=ans2)
+            return render_template('page2.html')
+    return render_template("page2.html")
 
 
 @app.route("/szhgjierbgojbdjbvjnvjr3", methods=["GET", "POST"])
@@ -50,8 +48,8 @@ def checkr3():
             ans3 = "first link"
             return render_template('answer3.html')
         else:
-            return render_template('page3.html', user_id=session.get('user_id'), c3=c3, ans3=ans3)
-    return render_template("page3.html", c3=c3, ans3=ans3)
+            return render_template('page3.html')
+    return render_template("page3.html")
 
 
 @app.route("/jzhbcgfbbgxfjghsvbgjk", methods=["GET", "POST"])
@@ -72,8 +70,8 @@ def checkr4():
             ans4 = "first link"
             return render_template('answer4.html')
         else:
-            return render_template('page4.html', user_id=session.get('user_id'), c4=c4, ans4=ans4)
-    return render_template("page4.html", c4=c4, ans4=ans4)
+            return render_template('page4.html')
+    return render_template("page4.html")
 
 @app.route("/ikekwgnvaguvagunvrnuvhjgasrjhb", methods=["GET", "POST"])
 def round5():
@@ -93,8 +91,8 @@ def checkr5():
             ans5 = "first link"
             return render_template('answer5.html')
         else:
-            return render_template('page5.html', user_id=session.get('user_id'), c5=c5, ans5=ans5)
-    return render_template("page5.html", c5=c5, ans5=ans5)
+            return render_template('page5.html')
+    return render_template("page5.html")
 
 @app.route("/sdbvvjksbjkdgdzjkfbdrjfvhmn", methods=["GET", "POST"])
 def round1():
@@ -114,8 +112,8 @@ def checkr1():
             ans1 = "first link"
             return render_template('answer.html')
         else:
-            return render_template('page.html',  c1=c1, ans1=ans1)
-    return render_template("page1.html", c1=c1, ans1=ans1)
+            return render_template('page.html')
+    return render_template("page1.html")
 
 @app.route('/')
 def home():
