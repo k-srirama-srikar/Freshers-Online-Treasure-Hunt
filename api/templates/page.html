@@ -61,7 +61,12 @@
             border: none;
         }
         
-        
+        .sk{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            margin: 10px;
+        }
         </style>
 </head>
 <body>
@@ -71,6 +76,9 @@
             <source src="static/{{ind}}" type="video/mp4">
         </video>
     </div>
+    {% endif %}
+    {% if c1==1 %}
+        <img class="sk" src="static/skill.jpeg" alt="skill issue">
     {% endif %}
     <div class="Songs">
         <audio controls>

@@ -69,7 +69,12 @@
   left: 0;
   margin: 10px;
         }
-
+        .sk{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            margin: 10px;
+        }
     </style>
 </head>
 <body>
@@ -85,6 +90,9 @@
                     </video>
                 </div>
                 {% endif %}
+                {% if c1==1 %}
+                <img class="sk" src="static/skill.jpeg" alt="skill issue">
+            {% endif %}
             </div>
 
 </body>
