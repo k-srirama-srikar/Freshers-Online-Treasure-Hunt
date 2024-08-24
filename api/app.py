@@ -1,7 +1,4 @@
 from flask import Flask, render_template, request, redirect, url_for, jsonify, session
-import json
-import os
-
 
 app = Flask(__name__)
 
@@ -119,3 +116,7 @@ def checkr1():
         else:
             return render_template('page.html',  c1=c1, ans1=ans1)
     return render_template("page1.html", c1=c1, ans1=ans1)
+
+@app.route('/')
+def home():
+    return render_template('/rules.html')
