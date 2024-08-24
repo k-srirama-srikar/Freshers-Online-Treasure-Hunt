@@ -63,7 +63,15 @@
         }
 
 
-
+        .vid{
+            .container {
+            display: flex;
+            background: transparent;
+            width: 100%;
+            justify-content: center; 
+            align-items: center;     
+        }
+        }
     </style>
 </head>
 <body>
@@ -73,6 +81,10 @@
                         <input id="btn" type="submit" value="Submit">
                 </form>
             </div>
-
+            {% if c %}
+            <div class="vid">
+                <video src="/static/{gen}"></video>
+            </div>
+            {% endif %}
 </body>
 </html>

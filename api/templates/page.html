@@ -20,7 +20,7 @@
             transform: translate(-50%, -50%);
             padding: 10px;
             width: 300px;
-            opacity:0.1
+            opacity:0.1;
             background-color: #f4f4f4;
         }
 
@@ -28,7 +28,7 @@
             text-align: center;
             padding-top: 20px;
             width: 100%;
-            align: center;
+            align-items: center;
         }
 
 
@@ -58,7 +58,15 @@
         }
 
 
-
+        .vid{
+            .container {
+            display: flex;
+            background: transparent;
+            width: 100%;
+            justify-content: center; 
+            align-items: center;     
+        }
+        }
     </style>
 </head>
 <body>
@@ -94,5 +102,10 @@
                 </form>
             </div>
     </div>
+    {% if c %}
+    <div class="vid">
+        <video src="/static/{gen}"></video>
+    </div>
+    {% endif %}
 </body>
 </html>
