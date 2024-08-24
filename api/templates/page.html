@@ -20,7 +20,6 @@
             transform: translate(-50%, -50%);
             padding: 10px;
             width: 300px;
-            opacity:0.1;
             background-color: #f4f4f4;
         }
 
@@ -102,9 +101,9 @@
                 </form>
             </div>
     </div>
-    {% if c %}
+    {% if c=="True" %}
     <div class="vid">
-        <video src="/static/{gen}"></video>
+        <video src="/static/{{gen}}"></video>
     </div>
     {% endif %}
 </body>

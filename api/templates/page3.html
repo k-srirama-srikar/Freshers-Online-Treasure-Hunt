@@ -82,9 +82,9 @@
                         <input id="btn" type="submit" value="Submit">
                 </form>
             </div>
-            {% if c %}
+            {% if c=="True" %}
             <div class="vid">
-                <video src="/static/{gen}"></video>
+                <video src="/static/{{gen}}"></video>
             </div>
             {% endif %}
 </body>
