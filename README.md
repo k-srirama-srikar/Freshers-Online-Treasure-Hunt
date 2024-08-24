@@ -1,2 +1,3 @@
-# Online-treasure-hunt-q2
-2nd webpage in online treasure hunt
+# Fresher's Online Treasure Hunt
+
+This is the final website that was made by us....
