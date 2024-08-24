@@ -21,7 +21,7 @@ def check():
     pwd = request.form['pwd']
     c1=0
     current_time = datetime.datetime.now()
-    if current_time >= datetime.datetime.combine(current_time.date(), datetime.time(10, 0)):
+    if current_time >= datetime.datetime.combine(current_time.date(), datetime.time(11, 30)):
         c1=1
     if request.method == "POST":
         
@@ -41,9 +41,9 @@ def round3():
 def checkr3():
     global c
     c = 0
-    ,c1=c1c1=0
+    c1=0
     current_time = datetime.datetime.now()
-    if current_time >= datetime.datetime.combine(current_time.date(), datetime.time(10, 0)):
+    if current_time >= datetime.datetime.combine(current_time.date(), datetime.time(12, 30)):
         c1=1
     pwd = request.form['pwd']
     if request.method == "POST":
@@ -65,7 +65,7 @@ def checkr4():
     c = 0
     c1=0
     current_time = datetime.datetime.now()
-    if current_time >= datetime.datetime.combine(current_time.date(), datetime.time(10, 0)):
+    if current_time >= datetime.datetime.combine(current_time.date(), datetime.time(1, 0)):
         c1=1
     pwd = request.form['pwd']
     if request.method == "POST":
@@ -89,7 +89,7 @@ def checkr5():
     c = 0
     c1=0
     current_time = datetime.datetime.now()
-    if current_time >= datetime.datetime.combine(current_time.date(), datetime.time(10, 0)):
+    if current_time >= datetime.datetime.combine(current_time.date(), datetime.time(1, 0)):
         c1=1
     pwd = request.form['pwd']
     if request.method == "POST":
@@ -110,7 +110,7 @@ def checkr1():
     c = 0
     c1=0
     current_time = datetime.datetime.now()
-    if current_time >= datetime.datetime.combine(current_time.date(), datetime.time(10, 0)):
+    if current_time >= datetime.datetime.combine(current_time.date(), datetime.time(9, 30)):
         c1=1
     pwd = request.form['pwd']
     if request.method == "POST":
