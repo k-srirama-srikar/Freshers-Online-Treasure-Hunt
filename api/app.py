@@ -2,6 +2,10 @@ from flask import Flask, render_template, request, redirect, url_for, jsonify, s
 
 app = Flask(__name__)
 
+# def wrongimage():
+
+
+
 @app.route("/svvfhevhjbfjbwknjkbfw")
 def hello_world():
     return render_template("page2.html")
