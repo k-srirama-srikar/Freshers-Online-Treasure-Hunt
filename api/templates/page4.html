@@ -66,7 +66,6 @@
         .vid{
             .container {
             display: flex;
-            background: transparent;
             width: 100%;
             justify-content: center; 
             align-items: center;     
@@ -81,11 +80,13 @@
                         <input type="password" name="pwd" id="pwd" placeholder="Enter your password">
                         <input id="btn" type="submit" value="Submit">
                 </form>
+                {% if c==1 %}
+                <div class="vid">
+                    <video width="320" height="240" controls>
+                        <source src="static/{{ind}}" type="video/mp4">
+                    </video>
+                </div>
+                {% endif %}
             </div>
-            {% if c=="True" %}
-            <div class="vid">
-                <video src="/static/{{gen}}"></video>
-            </div>
-            {% endif %}
 </body>
 </html>
