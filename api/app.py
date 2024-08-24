@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, jsonify, session
+from flask import Flask, render_template, request
 from random import randint
 app = Flask(__name__)
 gen=0
@@ -42,8 +42,8 @@ def checkr3():
             return render_template('answer3.html',c=c,ind=wrongimage())
         else:
             c = 1
-            return render_template('page3.html',c=c)
-    return render_template("page3.html",c=c,ind=wrongimage())
+            return render_template('page3.html',c=c,ind=wrongimage())
+    return render_template('page3.html',c=c,ind=wrongimage())
 
 
 @app.route("/jzhbcgfbbgxfjghsvbgjk", methods=["GET", "POST"])
@@ -91,9 +91,9 @@ def checkr1():
     pwd = request.form['pwd']
     if request.method == "POST":
         if pwd == "aurjaoobt":
-            c = 1
             return render_template('answer.html',c=c,ind=wrongimage())
         else:
+            c = 1
             return render_template('page.html',c=c,ind=wrongimage())
     return render_template("page.html",c=c,ind=wrongimage())
 

@@ -29,6 +29,12 @@
             width: 100%;
             align-items: center;
         }
+        .vid{
+            position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
+        }
 
 
         #pwd {
@@ -55,20 +61,18 @@
             border-radius: 15px;
             border: none;
         }
-
-
-        .vid{
-            .container {
-            display: flex;
-            background: transparent;
-            width: 100%;
-            justify-content: center; 
-            align-items: center;     
-        }
-        }
-    </style>
+        
+        
+        </style>
 </head>
 <body>
+    {% if c==1 %}
+    <div class="vid">
+        <video width="320" height="240" controls>
+            <source src="static/{{ind}}" type="video/mp4">
+        </video>
+    </div>
+    {% endif %}
     <div class="Songs">
         <audio controls>
             <source src="static/ahha_tamatar_mazedaar.mp3" type="audio/mpeg">
@@ -94,19 +98,12 @@
             <source src="static/5kjasdffkjhasdfhkjadfsbkjdsfhkjlkladfshkjkdfsbkjhshkjdshdfshkjdsfhkj.mp3" type="audio/mpeg">
             And you consider yourself an Asian!
         </audio>
-            <div class="container">
-                <form action="/checkr1hhgsbgjkbkjzsgkn" method="post">
-                        <input type="password" name="pwd" id="pwd" placeholder="Enter your password">
-                        <input id="btn" type="submit" value="Submit">
-                </form>
-                {% if c==1 %}
-                <div class="vid">
-                    <video width="320" height="240" controls>
-                        <source src="static/{{ind}}" type="video/mp4">
-                    </video>
-                </div>
-                {% endif %}
-            </div>
+        <div class="container">
+            <form action="/checkr1hhgsbgjkbkjzsgkn" method="post">
+                    <input type="password" name="pwd" id="pwd" placeholder="Enter your password">
+                    <input id="btn" type="submit" value="Submit">
+            </form>
+        </div>
     </div>
 
 </body>
