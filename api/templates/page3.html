@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+    <link rel="icon" href="static/q1-treasure2.png" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: url('static/cat-speaking-cat-speaking-water.gif');
+            background-position: top left;
+            background-size: 16.7%;
+        }
+
+
+        .container {
+            display: flex;
+            padding-top: 20px;
+            width: 100%;
+            justify-content: center; /* Center horizontally */
+            align-items: center;     /* Center vertically */
+            height: 100vh; 
+        }
+
+        #user_id {
+            width: 100%;
+            height:32px;
+            justify-content: center;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 16px;
+            box-sizing: border-box;
+            font-size: 16px;
+            color: #333;
+        }
+
+
+        #pwd {
+            width: 100%;
+            height:32px;
+            margin-top: 10px;
+            justify-content: center;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 16px;
+            box-sizing: border-box;
+            font-size: 16px;
+            color: #333;
+        }
+
+        #btn{
+            display: inline-block; /* Makes the element behave like inline but allows width/height */
+            color: white;
+            margin-top: 10px;
+            width: 100%;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: 600;
+            background: linear-gradient(99.74deg, #06dbac, #bd00ff);
+            border-radius: 15px;
+            border: none;
+        }
+
+
+
+    </style>
+</head>
+<body>
+            <div class="container">
+                <form action="/checkr3r3r3r3" method="post">
+                        <input id="user_id" type="text" name="user_id" value="{{ user_id or '' }}" placeholder="Enter your used id">
+                        <input type="password" name="pwd" id="pwd" placeholder="Enter your password">
+                        <input id="btn" type="submit" value="Submit">
+                </form>
+            </div>
+
+</body>
+</html>
