@@ -65,7 +65,7 @@ def checkr4():
     c = 0
     c1=0
     current_time = datetime.datetime.now()
-    if current_time >= datetime.datetime.combine(current_time.date(), datetime.time(1, 0)):
+    if current_time >= datetime.datetime.combine(current_time.date(), datetime.time(13, 30)):
         c1=1
     pwd = request.form['pwd']
     if request.method == "POST":
